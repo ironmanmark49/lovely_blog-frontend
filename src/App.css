@@ -1,0 +1,93 @@
+section {
+  margin-top: 50px;
+}
+.btn {
+  background: #5f84f5;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  height: 45px;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+  padding: 0 15px;
+  color: #fff;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 15px;
+  font-weight: 700;
+}
+[class*="-flex-btn"] {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+.btn:hover {
+  background: #c04f71;
+}
+.Section-Title {
+  font-size: 38.883px;
+  color: #22263d;
+  text-align: center;
+
+  font-style: normal;
+  font-weight: 800;
+}
+.Section-Title span {
+  color: #ed628b;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+.container {
+  width: calc(100% - 40px);
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+    padding-right: 15px;
+    padding-left: 15px;    
+  }
+  .btn {
+    padding: 0 20px;
+  }
+}
+@media (min-width: 767px) {
+  .container {
+    max-width: 720px;
+  }
+  .Section-Title {
+    font-size: 35.883px;
+    text-align: start;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .Section-Title {
+    font-size: 40.883px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  .Section-Title {
+    font-size: 45.883px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+  .Section-Title {
+    font-size: 50.883px;
+  }
+}
