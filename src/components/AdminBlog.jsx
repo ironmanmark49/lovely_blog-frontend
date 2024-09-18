@@ -11,7 +11,7 @@ export const AdminBlog = () => {
 
   useEffect(() => {
    axios
-      .get("http://localhost:8000/allblogs")
+      .get("http://ec2-3-109-32-46.ap-south-1.compute.amazonaws.com/api/allblogs")
       .then((response) => {
         setPost(response.data.AllBlog);
       })
@@ -42,7 +42,7 @@ const filter = post.filter((element) => {
             {filter?.slice(0, currentBlog * 2).map((elem, key) => (
               <div className="card-admin-blog" key={key}>
                 <div className="admin-blog-cover">
-                  <img src={`http://localhost:8000/images/coverimage/${elem.CoverImage}`} alt="" />
+                  <img src={`http://ec2-3-109-32-46.ap-south-1.compute.amazonaws.com/api/images/coverimage/${elem.CoverImage}`} alt="" />
                 </div>
                 <div className="card-blog-bottom">
                   <span className="card-blog-date">

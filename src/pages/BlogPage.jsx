@@ -10,7 +10,7 @@ export const BlogPage = () => {
   const id = useParams();
   const [fullBlog, setFullBlog] = useState([]);
   useEffect(()=>{
-    axios.get("http://localhost:8000/allblogs")
+    axios.get("http://ec2-3-109-32-46.ap-south-1.compute.amazonaws.com/api/allblogs")
     .then((resp) => {
       
       setFullBlog(resp.data.AllBlog);
@@ -43,7 +43,7 @@ export const BlogPage = () => {
                 </strong>
                 <div className="card-blog-top">
                   <img
-                    src={`http://localhost:8000/images/coverimage/${newData[0]?.CoverImage}`}
+                    src={`http://ec2-3-109-32-46.ap-south-1.compute.amazonaws.com/api/images/coverimage/${newData[0]?.CoverImage}`}
                     alt="" />
                 </div>
                   <div className="card-blog-bottom">
